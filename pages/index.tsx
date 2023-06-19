@@ -2,6 +2,7 @@ import { NextPage } from 'next'
 import styles from '../styles/Home.module.css'
 import { AppBar } from '../components/AppBar'
 import { SendSolForm } from '../components/SendSolForm'
+import { Balance } from '../components/Balance'
 import Head from 'next/head'
 
 const Home: NextPage = (props) => {
@@ -17,7 +18,7 @@ const Home: NextPage = (props) => {
       </Head>
       <AppBar />
       <div className={styles.AppBody}>
-        <p>Display Balance Here</p>
+        <Balance />
         <SendSolForm />
       </div>
     </div>
